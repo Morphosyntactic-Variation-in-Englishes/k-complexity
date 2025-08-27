@@ -1,4 +1,4 @@
-# k-complexity
+# k-complexity: Kolmogorov-based complexity in spoken English varieties
 
 
 #### Replication data and scripts for: Assessing the role of socio-demographic triggers on Kolmogorov-based complexity in spoken English varieties
