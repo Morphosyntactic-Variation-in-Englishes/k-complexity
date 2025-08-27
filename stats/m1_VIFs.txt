@@ -1,0 +1,14 @@
+check_collinearity(m1)
+# Check for Multicollinearity
+Check for Multicollinearity
+
+Low Correlation
+
+              Term  VIF   VIF 95% CI adj. VIF Tolerance Tolerance 95% CI
+     log10_natives 1.67 [1.31, 2.45]     1.29      0.60     [0.41, 0.76]
+  prop_non_natives 1.34 [1.12, 2.01]     1.16      0.74     [0.50, 0.90]
+          z_spread 1.69 [1.32, 2.48]     1.30      0.59     [0.40, 0.76]
+         z_density 2.43 [1.79, 3.59]     1.56      0.41     [0.28, 0.56]
+       z_migration 2.01 [1.52, 2.96]     1.42      0.50     [0.34, 0.66]
+ contact_languages 2.50 [1.83, 3.70]     1.58      0.40     [0.27, 0.55]
+

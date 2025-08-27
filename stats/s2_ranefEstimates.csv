@@ -1,0 +1,9 @@
+"","grpvar","term","grp","condval","condsd"
+"1","macro_region","(Intercept)","Af",0,0
+"2","macro_region","(Intercept)","Am",0,0
+"3","macro_region","(Intercept)","As",0,0
+"4","macro_region","(Intercept)","BI",0,0
+"5","macro_region","(Intercept)","Ca",0,0
+"6","macro_region","(Intercept)","Oc",0,0
+"7","corpus","(Intercept)","FRED",0,0
+"8","corpus","(Intercept)","ICE",0,0

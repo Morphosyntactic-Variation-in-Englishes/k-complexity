@@ -1,0 +1,18 @@
+drop1(m1, test="Chisq")
+Single term deletions
+
+Model:
+scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives + 
+    z_spread + z_density + z_migration + contact_languages + 
+    (1 | macro_region) + (1 | corpus)
+                  npar    AIC     LRT  Pr(Chi)   
+<none>                 24.675                    
+log10_natives        1 23.864  1.1891 0.275513   
+prop_non_natives     1 25.349  2.6740 0.101999   
+z_spread             1 25.739  3.0640 0.080044 . 
+z_density            1 27.926  5.2516 0.021927 * 
+z_migration          1 30.818  8.1433 0.004322 **
+contact_languages    3 31.888 13.2131 0.004198 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

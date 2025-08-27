@@ -1,0 +1,45 @@
+summary(m1)
+Linear mixed model fit by maximum likelihood  ['lmerMod']
+Formula: scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives +  
+    z_spread + z_density + z_migration + contact_languages +  
+    (1 | macro_region) + (1 | corpus)
+   Data: df
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+     24.7      38.8      -0.3       0.7        12 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-1.6297 -0.6366  0.2161  0.6736  1.4623 
+
+Random effects:
+ Groups       Name        Variance Std.Dev.
+ macro_region (Intercept) 0.10663  0.3265  
+ corpus       (Intercept) 0.75086  0.8665  
+ Residual                 0.02166  0.1472  
+Number of obs: 24, groups:  macro_region, 6; corpus, 2
+
+Fixed effects:
+                   Estimate Std. Error t value
+(Intercept)         0.46718    0.71297   0.655
+log10_natives      -0.05675    0.05126  -1.107
+prop_non_natives   -0.30842    0.18165  -1.698
+z_spread           -0.13842    0.07584  -1.825
+z_density          -0.16150    0.06283  -2.570
+z_migration         0.32403    0.10140   3.196
+contact_languages1  0.49440    0.33230   1.488
+contact_languages2  0.31777    0.30828   1.031
+contact_languages3  0.92285    0.33130   2.786
+
+Correlation of Fixed Effects:
+            (Intr) lg10_n prp_n_ z_sprd z_dnst z_mgrt cntc_1 cntc_2
+log10_natvs -0.423                                                 
+prp_nn_ntvs -0.119  0.126                                          
+z_spread     0.032 -0.017  0.037                                   
+z_density    0.044 -0.044  0.209  0.538                            
+z_migration  0.149 -0.462  0.117 -0.385 -0.296                     
+cntct_lngg1 -0.140 -0.041 -0.266 -0.379 -0.425  0.169              
+cntct_lngg2 -0.166  0.021 -0.276 -0.153 -0.090  0.099  0.842       
+cntct_lngg3 -0.119 -0.076 -0.231 -0.161 -0.084  0.203  0.758  0.891
+> 
+

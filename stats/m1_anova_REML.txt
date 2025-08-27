@@ -1,0 +1,26 @@
+anova(m1R_REML, m1_REML, test = 'Chisq', refit = FALSE) 
+
+Data: df
+Models:
+m1R_REML: scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives + z_spread + z_density + z_migration + contact_languages + (1 | corpus)
+m1_REML: scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives + z_spread + z_density + z_migration + contact_languages + (1 | macro_region) + (1 | corpus)
+         npar    AIC    BIC   logLik -2*log(L)  Chisq Df Pr(>Chisq)   
+m1R_REML   11 50.688 63.647 -14.3440    28.688                        
+m1_REML    12 43.191 57.328  -9.5956    19.191 9.4968  1   0.002058 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+anova(m1C_REML, m1_REML, test = 'Chisq', refit = FALSE) 
+
+Data: df
+Models:
+m1C_REML: scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives + z_spread + z_density + z_migration + contact_languages + (1 | region)
+m1_REML: scale(agg_meanmorphratio) ~ log10_natives + prop_non_natives + z_spread + z_density + z_migration + contact_languages + (1 | macro_region) + (1 | corpus)
+         npar    AIC    BIC   logLik -2*log(L)  Chisq Df Pr(>Chisq)    
+m1C_REML   11 65.997 78.955 -21.9983    43.997                         
+m1_REML    12 43.191 57.328  -9.5956    19.191 24.805  1  6.342e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
